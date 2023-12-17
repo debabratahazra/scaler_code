@@ -100,3 +100,84 @@ while n >= 0:
     print(n, end=" ")
 else:
     print("Exec", end=" ")
+
+
+if True:
+    print("Knock Knock")
+if True:
+    print("Who's There?")
+if True:
+    print("No One")
+
+
+num = 6  # int(input("Enter value: "))
+val = 0
+for i in range(2, num):
+    val = val + i
+if val > 10:
+    print('Hello, this is Raj')
+else:
+    print('There is no one')
+
+x = 5
+if x > 5:
+    x = x*3
+if x > 15:
+    x = 0
+print(x)
+
+
+num = 2
+while num > 1:
+    num = num // 3
+print(num)
+
+
+a = [10, 20, 30, 440, 50, 60, 70, 80, 90, 100]
+
+a[3:5]
+a[:8]
+a[:]
+a[7:]
+a[-2:-5:-1]
+a[-2:-7]
+a[:-5]
+a[-2:]
+a[-8:5]
+a[-8:5:-1]
+
+A = ["1", "2", "3", "4", "5", "6"]
+A[len(A):] = ["7", "8"]
+print(A)
+A += ["9", "10"]
+print(A)
+A[-1:] = ["11", "12"]   # overwrite last element
+print(A)
+
+# ERROR here
+# print("hello" + 1+2+3)
+
+name_lst = ["Vijay", "Vickey"]
+tup = ("Item_1", 0.5, name_lst)
+name_lst.append("Vishal")
+print(tup)
+
+
+set1 = {1, 2, 4}
+set2 = {4, 5, 6}
+# print(len(set1 + set2))     # Error
+
+
+sets = {3, 4, 5}
+sets.update([1, 2, 3])
+print(sets)
+
+
+sets = {3, 4, 5}
+# sets.add([1, 2, 3])  # error
+print(sets)
+
+
+d = {1: "one", 2: "two", 3: "three"}
+for k, v in d.items():
+    print(f"{k} --> {v}")

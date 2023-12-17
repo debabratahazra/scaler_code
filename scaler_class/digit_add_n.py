@@ -8,11 +8,10 @@ def main():
     for i in range(0, test_case):
         num = int(input())
         total = 0
-        if num == 0:
-            total += 1
+
         while num > 0:
             reminder = num % 10
-            total += 1
+            total += reminder
             num = num // 10
         count.append(total)
 
