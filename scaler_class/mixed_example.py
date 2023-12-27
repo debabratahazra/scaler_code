@@ -181,3 +181,34 @@ print(sets)
 d = {1: "one", 2: "two", 3: "three"}
 for k, v in d.items():
     print(f"{k} --> {v}")
+################################################################
+s1 = "ab"
+s2 = "cd"
+s3 = ""
+
+for i in range(len(s1)):
+    for j in range(len(s2)):
+        if i == j:
+            s3 += s1[i] + s2[j]
+        else:
+            s3 += s2[j] + s1[i]
+
+print(s3)
+################################################################
+x = 1
+indicator_1 = True
+indicator_2 = False
+
+if indicator_1:
+    indicator_1 = indicator_2
+    indicator_2 = indicator_1
+    if indicator_2:
+        x = x - 1
+    else:
+        x = x / 1
+print(x)
+################
+L = [1, 1, 1, 1, 1, 1, 1, 2]
+
+print(L.count(L[0]) == len(L))
+################################################################
