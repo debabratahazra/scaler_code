@@ -1,0 +1,52 @@
+Q1
+Neha has 4 yellow t-shirts, 6 black t-shirts, and 2 blue t-shirts to choose from for her 
+outfit today. She chooses a t-shirt randomly with each t-shirt equally likely to be chosen.
+Find the probability that a black or blue t-shirt is chosen for the outfit.
+
+A1:
+P[Black] = 6/12
+P[Blue] = 2/12
+
+So, P[Black] + P[Blue] = 2/3 
+
+################################
+
+Q2
+The probability that a randomly chosen student belongs to the beginner or intermediate 
+cohort is 0.75.
+The probability that a randomly chosen student belongs to the intermediate or advanced 
+cohort is 0.6.
+What is the probability that a randomly chosen person belongs to the intermediate 
+cohort?
+
+A2:
+Here,
+P[beginner] + P[intermediate] = 0.75
+and,
+P[intermediate] + P[advanced] = 0.6
+
+Also, P[beginner] + P[intermediate] + P[advanced] = 1 (according to theory)
+
+So, P[beginner] + P[intermediate] + P[advanced] - P[beginner] + P[intermediate] = 1 - 0.75
+or, P[beginner] = 0.25
+
+So, P[intermediate] = 0.6 - 0.25 = 0.35
+
+#############################
+Q3:
+Two dice are thrown, and their sum is recorded. What is the probability that the sum of 
+observed outcome values is less than or equal to 5?
+
+A2:
+(1,1) (1,2) (1,3) (1,4) 
+(2,1) (2,2) (2,3) 
+(3,1) (3,2) 
+(4,1) 
+
+These are the possible combination where sum <= 5
+So, P[X <= 5] = 10/36 ; where 36 is the total possibilities.
+
+##################################
+
+
+
