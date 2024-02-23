@@ -50,3 +50,4 @@ So, P[X <= 5] = 10/36 ; where 36 is the total possibilities.
 
 
 
+
