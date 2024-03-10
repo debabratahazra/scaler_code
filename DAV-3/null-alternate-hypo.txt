@@ -1,0 +1,31 @@
+Ques:
+A fair coin should land showing tails with a relative frequency of 50% in a long series 
+of flips.
+
+John was told by a friend that spinning a coin on a flat surface, rather than flipping 
+it would not be fair. Spinning would cause the coin to be more biased towards giving tails.
+
+To test this claim, he spun his own penny 100 times. It was observed that the penny 
+showed tails in 60% of the spins.
+
+Let p represent the proportion of spins that this penny would land showing tails.
+
+What are appropriate hypotheses for John's significance test?
+
+
+
+
+
+Ans:
+
+
+Null Hypothesis (H0):
+
+The null hypothesis represents the assumption that there is no difference from the expected 
+proportion of tails for a fair coin,
+i.e. H0: p=50
+Alternative Hypothesis (H1):
+
+The alternative hypothesis expresses the claim being tested, which is that spinning the 
+penny makes it more likely to land showing tails, implying that the proportion of tails may be greater than 50%,
+i.e. H1: p>50
