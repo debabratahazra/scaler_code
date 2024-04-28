@@ -212,6 +212,59 @@ else:
    print("There are no significant differences in the mean battery life of smartphones among these 4 brands.")
 print()
 
+'''
+Since there is a significant difference between at least one pair of smartphone brands, 
+in order to find out which one, we need to Perform T-Test for each pair of different brands, 
+and calculate the t-statistic and p-value for each pair.
+These pairs are:
+
+A vs. B,
+A vs. C,
+A vs. D,
+B vs. C,
+B vs. D,
+C vs. D.
+
+Therefore, we formulate our Hypotheses as:
+
+- H0: There is no significant difference in the mean battery life between the two smartphone brands, 
+i.e. they offer the same battery life.
+- Ha: There is a significant difference in the mean battery life between the two smartphone brands.
+The significance level is set at 0.02
+'''
+
+import numpy as np
+from scipy.stats import ttest_ind
+
+# Sample data for battery life of different brand smartphones
+brand_A = [19.60, 18.82, 19.00, 18.45, 19.79, 19.03, 17.89, 19.42]
+brand_B = [21.10, 20.00, 20.43, 19.67, 18.99, 19.98, 20.14, 19.78]
+brand_C = [10.31, 10.02, 9.41, 9.89, 10.05, 10.52, 11.02, 10.42]
+brand_D = [17.02, 16.71, 17.78, 18.65, 15.98, 17.63, 17.00, 16.78, 16.92, 17.14]
+
+# Perform pairwise t-tests
+result_ab = ttest_ind(brand_A, brand_B)
+result_ac = ttest_ind(brand_A, brand_C)
+result_ad = ttest_ind(brand_A, brand_D)
+result_bc = ttest_ind(brand_B, brand_C)
+result_bd = ttest_ind(brand_B, brand_D)
+result_cd = ttest_ind(brand_C, brand_D)
+
+# Significance level
+alpha = 0.02
+
+# Print results
+print("Pairwise t-test results:")
+print("A vs. B:", "Pvalue = ", result_ab.pvalue, " ; Significant difference in Mean Battery life" if result_ab.pvalue <= alpha else "No difference in mean Battery life")
+print("A vs. C:", "Pvalue = ", result_ac.pvalue, " ; Significant difference in Mean Battery life" if result_ac.pvalue <= alpha else "No difference in mean Battery life")
+print("A vs. D:", "Pvalue = ", result_ad.pvalue, " ; Significant difference in Mean Battery life" if result_ad.pvalue <= alpha else "No difference in mean Battery life")
+print("B vs. C:", "Pvalue = ", result_bc.pvalue, " ; Significant difference in Mean Battery life" if result_bc.pvalue <= alpha else "No difference in mean Battery life")
+print("B vs. D:", "Pvalue = ", result_bd.pvalue, " ; Significant difference in Mean Battery life" if result_bd.pvalue <= alpha else "No difference in mean Battery life")
+print("C vs. D:", "Pvalue = ", result_cd.pvalue, " ; Significant difference in Mean Battery life" if result_cd.pvalue <= alpha else "No difference in mean Battery life")
+
+# Hence, we conclude that all four smartphone brands offer a significantly different mean battery 
+# life.
+
 ###################################################
 ####################################################
 
