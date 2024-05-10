@@ -91,3 +91,34 @@ print()
 #####################################
 ###################################
 
+'''
+Fitness app claim, population mean = 8000 steps, population std dev = 1200 steps
+Sample size of 30, sample mean = 7600 steps and alpha = 0.05. 
+What is p-value and conclusion?
+'''
+
+import numpy as np
+from scipy.stats import norm
+
+population_mean = 8000
+population_stddev = 1200
+
+sample_mean = 7600
+sample_size = 30
+
+# z_score = (x - mu) / (sigma / root(n))
+z_score = (sample_mean - population_mean) / (population_stddev/np.sqrt(sample_size))
+print('Z score: %.2f' % z_score)
+
+p_value = 1 - norm.cdf(z_score) # Do the Right tailed test
+print('p-value: %.4f' % p_value)
+
+alpha = 0.05
+
+if p_value < alpha:
+    print('Reject H0')
+else:
+    print('Failed to reject H0')
+print()
+################################
+################################
