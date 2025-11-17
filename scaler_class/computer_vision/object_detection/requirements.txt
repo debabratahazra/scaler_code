@@ -1,0 +1,10 @@
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+matplotlib>=3.4.0
+scikit-learn>=1.0.0
+tensorflow>=2.10.0
+
+# Model visualization (optional but used in main.py)
+pydot>=1.4.2
+graphviz>=0.20.1

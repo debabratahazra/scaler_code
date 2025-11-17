@@ -1,0 +1,79 @@
+{
+  "baseline": {
+    "model_name": "Baseline Model",
+    "classification_accuracy": 0.8550272798129385,
+    "mean_iou": 0.2829339720766407,
+    "median_iou": 0.2493815741454018,
+    "std_iou": 0.24028662628483624,
+    "good_predictions_ratio": 0.220576773187841,
+    "excellent_predictions_ratio": 0.05845674201091192,
+    "outstanding_predictions_ratio": 0.000779423226812159,
+    "bbox_accuracy_distribution": {
+      "iou_0_1": 411,
+      "iou_1_3": 309,
+      "iou_3_5": 280,
+      "iou_5_7": 208,
+      "iou_7_9": 74,
+      "iou_9_1": 1
+    },
+    "class_performance": {
+      "rectangle": {
+        "accuracy": 0.8329355608591885,
+        "mean_iou": 0.27042291028240895,
+        "samples": 419
+      },
+      "circle": {
+        "accuracy": 0.8202764976958525,
+        "mean_iou": 0.28263122506984284,
+        "samples": 434
+      },
+      "triangle": {
+        "accuracy": 0.9116279069767442,
+        "mean_iou": 0.29543054671090446,
+        "samples": 430
+      }
+    },
+    "total_samples": 1283
+  },
+  "improved": {
+    "model_name": "Improved Model",
+    "classification_accuracy": 0.852689010132502,
+    "mean_iou": 0.0,
+    "median_iou": 0.0,
+    "std_iou": 0.0,
+    "good_predictions_ratio": 0.0,
+    "excellent_predictions_ratio": 0.0,
+    "outstanding_predictions_ratio": 0.0,
+    "bbox_accuracy_distribution": {
+      "iou_0_1": 1283,
+      "iou_1_3": 0,
+      "iou_3_5": 0,
+      "iou_5_7": 0,
+      "iou_7_9": 0,
+      "iou_9_1": 0
+    },
+    "class_performance": {
+      "rectangle": {
+        "accuracy": 0.8257756563245824,
+        "mean_iou": 0.0,
+        "samples": 419
+      },
+      "circle": {
+        "accuracy": 0.7926267281105991,
+        "mean_iou": 0.0,
+        "samples": 434
+      },
+      "triangle": {
+        "accuracy": 0.9395348837209302,
+        "mean_iou": 0.0,
+        "samples": 430
+      }
+    },
+    "total_samples": 1283
+  },
+  "comparison": {
+    "iou_improvement": -0.2829339720766407,
+    "accuracy_improvement": -0.002338269680436489,
+    "excellent_predictions_improvement": -0.05845674201091192
+  }
+}

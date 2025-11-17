@@ -1,0 +1,18 @@
+{
+  "total_images": 2000,
+  "total_objects": 3103,
+  "class_distribution": {
+    "rectangle": 1074,
+    "circle": 1014,
+    "triangle": 1090
+  },
+  "size_distribution": {
+    "small": 958,
+    "medium": 1582,
+    "large": 638
+  },
+  "complexity_distribution": {
+    "single": 1222,
+    "multiple": 778
+  }
+}

@@ -1,0 +1,10 @@
+
+# 🚀 IMPROVED OBJECT DETECTION MODEL - USAGE GUIDE
+
+## 📦 Quick Start
+
+# Load the improved model
+model = tf.keras.models.load_model('{PROJECT_PATH}/models/improved/improved_model.h5')
+
+# Load class names
+class_names = {class_names}

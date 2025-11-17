@@ -1,0 +1,74 @@
+{
+  "Small Objects": {
+    "model_name": "Small Objects",
+    "classification_accuracy": 0.8491620111731844,
+    "mean_iou": 0.0,
+    "median_iou": 0.0,
+    "std_iou": 0.0,
+    "good_predictions_ratio": 0.0,
+    "excellent_predictions_ratio": 0.0,
+    "outstanding_predictions_ratio": 0.0,
+    "bbox_accuracy_distribution": {
+      "iou_0_1": 895,
+      "iou_1_3": 0,
+      "iou_3_5": 0,
+      "iou_5_7": 0,
+      "iou_7_9": 0,
+      "iou_9_1": 0
+    },
+    "class_performance": {
+      "rectangle": {
+        "accuracy": 0.8339100346020761,
+        "mean_iou": 0.0,
+        "samples": 289
+      },
+      "circle": {
+        "accuracy": 0.7929936305732485,
+        "mean_iou": 0.0,
+        "samples": 314
+      },
+      "triangle": {
+        "accuracy": 0.9246575342465754,
+        "mean_iou": 0.0,
+        "samples": 292
+      }
+    },
+    "total_samples": 895
+  },
+  "Edge Cases": {
+    "model_name": "Edge Cases",
+    "classification_accuracy": 0.8571428571428571,
+    "mean_iou": 0.0,
+    "median_iou": 0.0,
+    "std_iou": 0.0,
+    "good_predictions_ratio": 0.0,
+    "excellent_predictions_ratio": 0.0,
+    "outstanding_predictions_ratio": 0.0,
+    "bbox_accuracy_distribution": {
+      "iou_0_1": 308,
+      "iou_1_3": 0,
+      "iou_3_5": 0,
+      "iou_5_7": 0,
+      "iou_7_9": 0,
+      "iou_9_1": 0
+    },
+    "class_performance": {
+      "rectangle": {
+        "accuracy": 0.78125,
+        "mean_iou": 0.0,
+        "samples": 96
+      },
+      "circle": {
+        "accuracy": 0.8350515463917526,
+        "mean_iou": 0.0,
+        "samples": 97
+      },
+      "triangle": {
+        "accuracy": 0.9391304347826087,
+        "mean_iou": 0.0,
+        "samples": 115
+      }
+    },
+    "total_samples": 308
+  }
+}
